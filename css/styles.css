@@ -50,11 +50,11 @@ ol {
 }
 
 .container {    
-    max-width: 1158;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 156px; 
-    margin-right: 156px;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .visually-hidden {
@@ -70,9 +70,12 @@ ol {
     overflow: hidden;
 }
 
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .header .container {
     display: flex;
-    padding: 24px 0;
 }
 
 
@@ -92,8 +95,7 @@ ol {
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 3%;
-    padding-right: 76px;
-
+    margin-right: 76px;
 }
 
 .header-logo-web {
@@ -105,13 +107,17 @@ ol {
     display: flex;
     align-items: center;
     gap: 40px;
-    flex-basis: 261px;
+    flex-basis: 261px;    
 }
 
 .header-nav-link {
+    display: flex;
     color: inherit;
     text-decoration: none;
     font-weight: 500;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
 }
 
 .header-nav-link:active {
@@ -128,13 +134,16 @@ ol {
 .header-address {
     display: flex;
     gap: 40px;
-    align-items: center;
+    align-items: center;    
 }
 
 .header-address-link {
+    display: flex;
     color: inherit;
     text-decoration: none;
-    font-style: normal;    
+    font-style: normal;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-address-link:active {
@@ -148,25 +157,27 @@ ol {
 
 .main-section {
     background-color: var(--logo-main);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 
 
 .main-section .title {
     max-width: 496px;
-    padding-top: 188px;
-    margin-left: 316px;
     margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
     line-height: 60px;
     color: var(--white);
     font-weight: bold;
     font-size: 56px;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .page-button {
+    display: block;
     font-family: inherit;
     background-color: var(--logo-web);
     font-weight: 500;
@@ -174,11 +185,11 @@ ol {
     letter-spacing: 4%;
     cursor: pointer;
     align-items: center;
-    margin-left: 480px;
     min-width: 169px;
     min-height: 56px;
-    margin-bottom: 188px;
-
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page-button:hover,
@@ -186,17 +197,20 @@ ol {
     background-color: var(--nav-active);
 }
 
+.text-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .benefits-list {
     display: flex;
     gap: 24px;
     align-items: center;
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .benefits-items {
     flex-basis: 264px;
+
 }
 .text-section .text-title {
     font-weight: 500;
@@ -205,32 +219,41 @@ ol {
     padding-bottom: 8px;    
 }
 
+
+
+.work-section {
+    padding-bottom: 120px;
+}
+
 .work-section .work-title {
     font-weight: bold;
     font-size: 36px;
     color: #2e2f42;
-    padding-left: 408px;
+    text-align: center;
 }
 
 .work-list {
     display: flex;
-    padding-top: 72px;
-    padding-bottom: 120px;
+    margin-top: 72px;
     gap: 24px;
 }
 
+
+
 .team-section {
     background-color: var(--cloud-color);
-    color: var(--main-color);;
+    color: var(--main-color);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 
 .team-section .team-title {
     font-weight: 700;
     font-size: 36px;
-    padding-top: 120px;
-    padding-left: 483px;
-    padding-bottom: 72px;
+    text-align: center;
+    margin-bottom: 72px;
+
 }
 
 .team-list {
@@ -240,40 +263,35 @@ ol {
 }
 
 .team-items {
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background-color: var(--white);
-    margin-bottom: 176px;
 
 }
 .team-section .team-name {
     font-weight: 500;
     font-size: 20px;
     color: var(--main-color);
-    padding-top: 32px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
-.team-section p {
+.team-text {
+    padding-top: 32px;
     padding-bottom: 32px;
+    text-align: center;
 }
 
 .page-footer {
     background: var(--main-color);
     color: var(--cloud-color);
-}
-
-.page-footer .container {
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .page-footer .container p{
-    padding-top: 8px;
-    padding-bottom: 100px;
     max-width: 264px;
 }
 
@@ -285,6 +303,7 @@ ol {
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 3%;
+    margin-bottom: 16px;
 }
 
 .footer-logo-web {
@@ -292,12 +311,15 @@ ol {
 }
 
 
+.portfolio-main {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
 .portfolio-list-btn {
     display: flex;
+    justify-content: center;
     gap: 24px;
-    padding-left: 271px;
-    padding-top: 96px;
-    padding-bottom: 72px;
 }
 
 .portfolio-btn {
@@ -323,6 +345,7 @@ ol {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 72px;
     row-gap: 48px;
     column-gap: 24px;
 
@@ -339,12 +362,15 @@ ol {
 }
 
 .products-title {
-    padding-top: 32px;
-    padding-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
+    margin-bottom: 8px;
 }
 
-.portfolio-list-item:last-child{
-    padding-bottom: 120px;
+.portfolio-text {
+    padding: 32px 16px 32px 16px;
+    border-bottom: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+
 }
